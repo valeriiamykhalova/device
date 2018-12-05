@@ -1613,8 +1613,40 @@ a.has-text-danger:hover, a.has-text-danger:focus {
   }
 }
 
-@font-face {}
-@font-face {}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: local("OpenSans"), url("../fonts/web/opensans.woff2") format("woff2"), url("../fonts/web/opensans.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-style: normal;
+  src: local("OpenSans"), url("../fonts/web/opensanslight.woff2") format("woff2"), url("../fonts/web/opensanslight.woff") format("woff");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 100;
+  font-style: normal;
+  src: local("OpenSans"), url("../fonts/web/opensanslight.woff2") format("woff2"), url("../fonts/web/opensanslight.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-style: normal;
+  src: local("OpenSans"), url("../fonts/web/gilroyextrabold.woff2") format("woff2"), url("../fonts/web/gilroyextrabold.woff") format("woff");
+}
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 100;
+  font-style: normal;
+  src: local("OpenSans"), url("../fonts/web/gilroylight.woff2") format("woff2"), url("../fonts/web/gilroylight.woff") format("woff");
+}
+html, body {
+  font-family: "Gilroy", "Open Sans", sans-serif;
+}
+
 body {
   margin: 0 auto;
 }
