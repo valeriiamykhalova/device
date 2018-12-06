@@ -10,10 +10,13 @@
   <body>
     <header>
       <a href="#">Device</a>
-      <span>
-        <img src="icons/search.svg" alt="Поиск по сайту"/>
-        <input type="text" placeholder="Поиск по сайту"/>
-      </span>
+      <nav>
+        <form method="get">
+          <img src="icons/search.svg" alt="Поиск по сайту" role="presentation"/>
+          <input type="text" placeholder="Поиск по сайту"/>
+          <button type="submit">Найти</button>
+        </form>
+      </nav>
       <ul>
         <li>
           <a href="#">Войти</a>
@@ -30,7 +33,7 @@
           <li>
             <p>Каталог товаров</p>
             <button type="button">
-              <img src="icons/plus.svg" alt="Показать каталог товаров"/>
+              <img src="icons/plus.svg" alt="Показать каталог товаров" role="presentation"/>
             </button>
             <ul>
               <li>
@@ -66,7 +69,7 @@
       </nav>
     </header>
     <main>
-      <h1>Device - сайт, который написал кто-то по накурке!</h1>
+      <h1>Device - сайт с огромным выбором гаджетов!</h1>
         <section>
           <h2>Популярные товары</h2>
 
@@ -77,15 +80,15 @@
           <p>Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-          <button type="button">Подробнее</button>
+          <a href="#">Подробнее</a>
           <button type="button">
-            <img src="icons/slider-button.svg" alt="slider button"/>
+            <img src="icons/slider-button.svg" alt="slider button" role="presentation"/>
           </button>
           <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty"/>
+            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
           </button>
           <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty"/>
+            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
           </button>
           <p><span>8.5 м</span>Длина палки</p>
           <p><span>5 кг</span>Вес палки</p>
@@ -98,15 +101,15 @@
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
             не пропускать занятия и соблюдать диету.
           </p>
-          <button type="button">Подробнее</button>
+          <a href="#">Подробнее</a>
           <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty"/>
+            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
           </button>
           <button type="button">
-            <img src="icons/slider-button.svg" alt="slider button"/>
+            <img src="icons/slider-button.svg" alt="slider button" role="presentation"/>
           </button>
           <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty"/>
+            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
           </button>
           <p><span>48 часов</span>Без подзарядки</p>
 
@@ -117,19 +120,18 @@
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <button type="button">Подробнее</button>
+          <a href="#">Подробнее</a>
           <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty"/>
+            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
           </button>
           <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty"/>
+            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
           </button>
           <button type="button">
-            <img src="icons/slider-button.svg" alt="slider button"/>
+            <img src="icons/slider-button.svg" alt="slider button" role="presentation"/>
           </button>
           <p><span>800 м</span>Дальность полета</p>
           <p><span>50 м</span>Радиус поражения</p>
-
         </section>
 
         <section>
@@ -199,35 +201,53 @@
         </section>
         <section>
           <h2>Информация про доставку, гарантию и кредит</h2>
-          <button type="button">Доставка</button>
-          <button type="button">Гарантия</button>
-          <button type="button">Кредит</button>
+          <ul>
+            <li>
+              <button type="button">Доставка</button>
+            </li>
+            <li>
+              <button type="button">Гарантия</button>
+            </li>
+            <li>
+              <button type="button">Кредит</button>
+            </li>
+          </ul>
 
           <h3>Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
-          <img src="icons/delivery.svg" alt="Доставка"/>
+          <img src="icons/delivery.svg" alt="Доставка" role="presentation"/>
 
           <h3>Гарантия</h3>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.
           </p>
-          <img src="icons/warranty.svg" alt="Гарантия"/>
+          <img src="icons/warranty.svg" alt="Гарантия" role="presentation"/>
 
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
             условия кредита. Выгодные для нашего банка, разумеется.
           </p>
-          <img src="icons/credit.svg" alt="Кредит"/>
+          <img src="icons/credit.svg" alt="Кредит" role="presentation"/>
 
         </section>
         <section>
-          <h2>Наши парнеры</h2>
-          <span aria-label="Dji"></span>
-          <span aria-label="SP Gadgets"></span>
-          <span aria-label="GoPro"></span>
-          <span aria-label="Vive"></span>
+          <h2>Наши партнеры</h2>
+          <ul>
+            <li>
+              <span aria-label="Dji"></span>
+            </li>
+            <li>
+              <span aria-label="SP Gadgets"></span>
+            </li>
+            <li>
+              <span aria-label="GoPro"></span>
+            </li>
+            <li>
+              <span aria-label="Vive"></span>
+            </li>
+          </ul>
         </section>
       <section>
         <h2>О нас</h2>
@@ -310,21 +330,21 @@
       <ul>
         <li>
           <a href="#">
-            <img src="icons/fb.svg" alt="facebook">
+            <img src="icons/fb.svg" alt="facebook" role="presentation">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="icons/instagram.svg" alt="instagram">
+            <img src="icons/instagram.svg" alt="instagram" role="presentation">
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="icons/twitter.svg" alt="twitter">
+            <img src="icons/twitter.svg" alt="twitter" role="presentation">
           </a>
         </li>
       </ul>
-      <img src="icons/logo-html.svg" alt="Логотип HtmlAcademy" />
+      <img src="icons/logo-html.svg" alt="Логотип HtmlAcademy" role="presentation"/>
     </footer>
   </body>
 </html>
