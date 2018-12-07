@@ -8,65 +8,70 @@
     <link rel="stylesheet" href="./styles/main.css"/>
   </head>
   <body>
-    <header>
-      <a href="#">Device</a>
-      <nav>
-        <form method="get">
-          <img src="icons/search.svg" alt="Поиск по сайту" role="presentation"/>
-          <input type="text" placeholder="Поиск по сайту"/>
-          <button type="submit">Найти</button>
-        </form>
-      </nav>
-      <ul>
-        <li>
-          <a href="#">Войти</a>
-        </li>
-        <li>
-          <a href="#">Сравнить</a>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-      <nav>
-        <ul>
-          <li>
-            <p>Каталог товаров</p>
-            <button type="button">
-              <img src="icons/plus.svg" alt="Показать каталог товаров" role="presentation"/>
-            </button>
-            <ul>
-              <li>
-                <a href="#">Виртуальная реальность</a>
+    <header class="header wrapper">
+      <div class="section">
+        <a href="#" class="header__logo">Device</a>
+        <div class="header__feature-box">
+          <nav class="header__search">
+            <form method="get" class="search">
+              <img class="search__icon" src="icons/search.svg" alt="Поиск по сайту" role="presentation"/>
+              <input class="search__input" type="text" placeholder="Поиск по сайту"/>
+              <button class="search__button" type="submit">Найти</button>
+            </form>
+          </nav>
+          <ul class="header__link-list">
+            <li class="header__profile">
+              <a class="header__link" href="#">Войти</a>
+            </li>
+            <li class="header__compare">
+              <a class="header__link" href="#">Сравнить</a>
+            </li>
+            <li class="header__basket">
+              <a class="header__link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="header__navbar">
+          <ul class="navbar header__feature-box">
+            <li id="category-wrapper" class="category-wrapper">
+              <button id="category-list-switcher" type="button" class="navbar__item navbar__button">Каталог товаров
+                <img src="icons/plus.svg" alt="Показать каталог товаров" role="presentation"/>
+              </button>
+              <ul id="category-list" class="category__list">
+                <li>
+                  <a class="category__item" href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a class="category__item" href="#">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a class="category__item" href="#">Экшн-камеры</a>
+                </li>
+                <li>
+                  <a class="category__item" href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a class="category__item" href="#">Умные часы</a>
+                </li>
+                <li>
+                  <a class="category__item" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </li>
+            <div class="header__feature">
+              <li class="header__feature-left">
+                <a class="navbar__item" href="#">Доставка</a>
               </li>
-              <li>
-                <a href="#">Моноподы для селфи</a>
+              <li class="header__feature-center">
+                <a class="navbar__item" href="#">Гарантия</a>
               </li>
-              <li>
-                <a href="#">Экшн-камеры</a>
+              <li class="header__feature-right">
+                <a class="navbar__item" href="#">Контакты</a>
               </li>
-              <li>
-                <a href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a href="#">Умные часы</a>
-              </li>
-              <li>
-                <a href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+            </div>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <h1>Device - сайт с огромным выбором гаджетов!</h1>
@@ -346,5 +351,7 @@
       </ul>
       <img src="icons/logo-html.svg" alt="Логотип HtmlAcademy" role="presentation"/>
     </footer>
+
+    <script src="scripts/components/category-list.js" async></script>
   </body>
 </html>

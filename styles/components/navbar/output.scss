@@ -1,0 +1,40 @@
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.navbar {
+  text-align: center;
+}
+
+.navbar__item {
+  display: inline-block;
+  font-size: $typography-text-medium;
+  line-height: 1.5rem;
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: $color-primary-text;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  @include mobile {
+    padding: 0.2rem;
+  }
+}
+
+.navbar__item:hover {
+  color: $color-search-text-hover;
+}
+
+.navbar__item:active {
+  color: $color-search-text;
+}
+
+.navbar__button {
+  margin-right: -24px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.navbar__button:focus {
+  outline: none;
+}

@@ -1,0 +1,36 @@
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.search__button {
+  display: none;
+  text-decoration: none;
+  border: 2px solid $color-primary-text;
+  background-color: $color-text;
+  padding-left: 17.5px;
+  padding-right: 17.5px;
+  cursor: pointer;
+
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: $typography-text-small;
+  line-height: 1.875rem;
+
+  @include tablet {
+    margin-right: 1rem;
+  }
+}
+
+.search__button:hover {
+  background-color: $color-primary-text;
+  color: $color-app-background;
+
+}
+
+.search__button:focus {
+  outline: none;
+}
+
+.search__button:active {
+  background-color: $color-primary-text;
+  color: rgba($color-app-background, 0.5);
+}
