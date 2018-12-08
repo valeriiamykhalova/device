@@ -1,5 +1,6 @@
 @import "../../units/typography/utils";
 @import "../../units/colors/utils";
+@import "../../vendors/bulma/sass/utilities/_all.sass";
 
 .navbar {
   text-align: center;
@@ -37,4 +38,10 @@
 
 .navbar__button:focus {
   outline: none;
+}
+
+@include mobile {
+  .header__navbar {
+    padding-bottom: 1rem;
+  }
 }
