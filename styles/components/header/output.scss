@@ -8,8 +8,13 @@
 
   .section {
     background-color: $color-text;
-  }
 
+    &--large {
+      @include tablet {
+        height: 300px;
+      }
+    }
+  }
 
 }
 

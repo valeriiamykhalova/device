@@ -8,6 +8,17 @@
   clip: rect(0 0 0 0);
 }
 
+@include until($desktop) {
+  .until-desktop\:display-none {
+    display: none;
+  }
+}
+
+@include until($tablet) {
+  .until-tablet\:display-none {
+    display: none;
+  }
+}
 .section {
   padding: 1rem;
 
@@ -30,3 +41,10 @@
     margin-right: auto;
   }
 }
+
+@include tablet {
+  .tablet\:mt-16per {
+    margin-top: 16%;
+  }
+}
+

@@ -80,5 +80,6 @@
 @include tablet {
   .category-wrapper:hover .category__list {
       display: flex;
+      z-index: 1;
     }
 }

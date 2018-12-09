@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header wrapper">
-      <div class="section">
+      <div class="section section--large">
         <a href="#" class="header__logo">Device</a>
         <div class="header__feature-box">
           <nav class="header__search">
@@ -82,69 +82,181 @@
       </div>
     </header>
     <main>
-      <h1>Device - сайт с огромным выбором гаджетов!</h1>
-        <section>
-          <h2>Популярные товары</h2>
+      <h1 class="visually-hidden">Device - сайт с огромным выбором гаджетов!</h1>
+        <section class="wrapper">
+          <h2 class="visually-hidden">Популярные товары</h2>
 
-          <h3>Палка для селфи</h3>
-          <span>01</span>
-          <img src="images/slider-1.png" alt="Палка для селфи"/>
-          <p>Делай селфи, как Бен Стиллер!</p>
-          <p>Самая длинная палка для селфи доступна в нашем магазине.
-            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-          </p>
-          <a href="#">Подробнее</a>
-          <button type="button">
-            <img src="icons/slider-button.svg" alt="slider button" role="presentation"/>
-          </button>
-          <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
-          </button>
-          <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
-          </button>
-          <p><span>8.5 м</span>Длина палки</p>
-          <p><span>5 кг</span>Вес палки</p>
-          <p><span>Карбон</span>Материал</p>
+          <input id="slide-1" name="main-products" class="visually-hidden" type="radio" checked />
+          <input id="slide-2" name="main-products" class="visually-hidden" type="radio" />
+          <input id="slide-3" name="main-products" class="visually-hidden" type="radio" />
 
-          <h3>Фитнес-браслеты</h3>
-          <span>02</span>
-          <img src="images/slider-2.png" alt="Фитнес-браслет"/>
-          <p>Худеем правильно!</p>
-          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
-            не пропускать занятия и соблюдать диету.
-          </p>
-          <a href="#">Подробнее</a>
-          <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
-          </button>
-          <button type="button">
-            <img src="icons/slider-button.svg" alt="slider button" role="presentation"/>
-          </button>
-          <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
-          </button>
-          <p><span>48 часов</span>Без подзарядки</p>
+          <ul class="popular-item-slider">
+            <li class="popular-item" data-slide="1">
+              <h3 class="visually-hidden">Палка для селфи</h3>
+              <span class="popular-item__number">01</span>
+              <div class="popular-item-box">
+                <div class="popular-item__image-wrapper">
+                  <img class="popular-item__image" src="images/slider-1.png" alt="Палка для селфи"/>
+                </div>
+                <div class="popular-item__info">
+                  <p class="popular-item__info-title">Делай селфи,
+                    <br class="until-tablet:display-none"/>
+                    как Бен Стиллер!</p>
+                  <p class="popular-item__info-description">Самая длинная палка для селфи доступна в нашем магазине.
+                    <br class="until-desktop:display-none"/>
+                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                  </p>
+                  <div class="popular-item__info-navigation">
+                    <a href="#" class="feature-button">
+                      <span class="feature-button__inner">Подробнее</span>
+                    </a>
 
-          <h3>Квадрокоптер</h3>
-          <span>03</span>
-          <img src="images/slider-3.png" alt="Квадрокоптер"/>
-          <p>Порхает как бабочка, жалит как пчела!</p>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
-            мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <a href="#">Подробнее</a>
-          <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
-          </button>
-          <button type="button">
-            <img src="icons/slider-button-empty.svg" alt="slider button empty" role="presentation"/>
-          </button>
-          <button type="button">
-            <img src="icons/slider-button.svg" alt="slider button" role="presentation"/>
-          </button>
-          <p><span>800 м</span>Дальность полета</p>
-          <p><span>50 м</span>Радиус поражения</p>
+                    <ul class="popular-item__button-wrapper">
+                      <li>
+                        <button type="button" class="popular-item__button">
+                          <label for="slide-1">
+                            <img src="icons/slider-button.svg" class="slide-button" alt="slider button" role="presentation"/>
+                          </label>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="popular-item__button">
+                          <label for="slide-2">
+                            <img src="icons/slider-button-empty.svg" class="slide-button" alt="slider button empty" role="presentation"/>
+                          </label>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="popular-item__button">
+                          <label for="slide-3">
+                            <img src="icons/slider-button-empty.svg" class="slide-button" alt="slider button empty" role="presentation"/>
+                          </label>
+                        </button>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="popular-item__param-list">
+                    <p class="popular-item__param">
+                      <span class="popular-item__param-value">8.5 м</span>Длина палки
+                    </p>
+                    <p class="popular-item__param">
+                      <span class="popular-item__param-value">5 кг</span>Вес палки
+                    </p>
+                    <p class="popular-item__param">
+                      <span class="popular-item__param-value">Карбон</span>Материал
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="popular-item" data-slide="2">
+              <h3 class="visually-hidden">Фитнес-браслеты</h3>
+              <span class="popular-item__number">02</span>
+              <div class="popular-item-box">
+                <div class="popular-item__image-wrapper">
+                  <img class="popular-item__image" src="images/slider-2.png" alt="Фитнес-браслет"/>
+                </div>
+                <div class="popular-item__info">
+                  <p class="popular-item__info-title">Худеем
+                    <br class="until-tablet:display-none"/> правильно!</p>
+                  <p class="popular-item__info-description">Мотивирующие фитнес-браслеты помогут найти в себе силы
+                    <br class="until-desktop:display-none"/>
+                    не пропускать занятия и соблюдать диету.
+                  </p>
+                  <div class="popular-item__info-navigation">
+                    <a href="#" class="feature-button">
+                      <span class="feature-button__inner">Подробнее</span>
+                    </a>
+
+                    <ul class="popular-item__button-wrapper">
+                      <li>
+                        <button type="button" class="popular-item__button">
+                          <label for="slide-1">
+                            <img src="icons/slider-button-empty.svg" class="slide-button" alt="slider button empty" role="presentation"/>
+                          </label>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="popular-item__button">
+                          <label for="slide-2">
+                            <img src="icons/slider-button.svg" class="slide-button" alt="slider button" role="presentation"/>
+                          </label>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="popular-item__button">
+                          <label for="slide-3">
+                            <img src="icons/slider-button-empty.svg" class="slide-button" alt="slider button empty" role="presentation"/>
+                          </label>
+                        </button>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="popular-item__param-list">
+                    <p class="popular-item__param">
+                      <span class="popular-item__param-value">48 часов</span>Без подзарядки</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="popular-item" data-slide="3">
+              <h3 class="visually-hidden">Квадрокоптер</h3>
+              <span class="popular-item__number">03</span>
+              <div class="popular-item-box">
+                <div class="popular-item__image-wrapper popular-item__image-wrapper--lower">
+                  <img class="popular-item__image" src="images/slider-3.png" alt="Квадрокоптер"/>
+                </div>
+                <div class="popular-item__info">
+                  <p class="popular-item__info-title">Порхает как бабочка,
+                    <br class="until-tablet:display-none"/> жалит как пчела!</p>
+                  <p class="popular-item__info-description">Этот обычный, на первый взгляд, квадрокоптер оснащен
+                    <br class="until-desktop:display-none"/>
+                    мощным лазером, замаскированным под стандартную камеру.
+                  </p>
+                  <div class="popular-item__info-navigation">
+                    <a href="#" class="feature-button">
+                      <span class="feature-button__inner">Подробнее</span>
+                    </a>
+
+                    <ul class="popular-item__button-wrapper">
+                      <li>
+                        <button type="button" class="popular-item__button">
+                          <label for="slide-1">
+                            <img src="icons/slider-button-empty.svg" class="slide-button" alt="slider button empty" role="presentation"/>
+                          </label>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="popular-item__button">
+                          <label for="slide-2">
+                            <img src="icons/slider-button-empty.svg" class="slide-button" alt="slider button empty" role="presentation"/>
+                          </label>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="popular-item__button">
+                          <label for="slide-3">
+                            <img src="icons/slider-button.svg" class="slide-button" alt="slider button" role="presentation"/>
+                          </label>
+                        </button>
+                      </li>
+                    </ul>
+
+                  </div>
+                  <div class="popular-item__param-list">
+                    <p class="popular-item__param">
+                      <span class="popular-item__param-value">800 м</span>Дальность полета
+                    </p>
+                    <p class="popular-item__param">
+                      <span class="popular-item__param-value">50 м</span>Радиус поражения
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </section>
 
         <section>
