@@ -12,20 +12,26 @@
 
   @include tablet {
     position: relative;
-    top: -32px
+    margin-top: -32px;
   }
 }
 .popular-item__image {
+  object-fit: contain;
+  padding-left: 10px;
 
   @include mobile {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    object-fit: contain;
-    width: 100%;
+    width: 50%;
     height: 100%;
   }
 
+  &--large {
+    @include mobile {
+      width: 80%;
+    }
+  }
 }
 
 .popular-item__info-title {
@@ -152,17 +158,16 @@
 
 .popular-item__info-navigation {
   display: flex;
+  align-items: center;
 
   @include mobile {
     max-width: 90%;
     margin: 15px auto;
     flex-direction: column;
-    align-items: center;
   }
 
   @include tablet {
     flex-direction: row;
-    align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -241,19 +246,6 @@
     margin-left: auto;
     flex-basis: auto;
   }
-
-  &--lower {
-    @include mobile {
-      margin-top: 30%;
-      margin-bottom: 25%;
-    }
-    @include tablet {
-      height: 486px;
-      position: relative;
-      top: -30px;
-      bottom: 0;
-    }
-  }
 }
 
 #slide-1:checked ~ .popular-item-slider [data-slide="1"] {
@@ -268,4 +260,19 @@
 
 .slide-button {
   cursor: pointer;
+}
+
+.main-products-input {
+  top: 40%;
+}
+
+.popular-item__navigation {
+  max-width: 80%;
+  margin: 15px auto;
+  display: flex;
+}
+
+.popular-item__button-wrapper {
+  font-size: 0;
+  margin-left: auto;
 }

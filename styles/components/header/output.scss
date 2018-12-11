@@ -5,23 +5,34 @@
 .header {
   padding-top: 29px;
   position: relative;
+}
 
-  .section {
-    background-color: $color-text;
+.header__section {
+  background-color: $color-text;
+  padding: 1rem;
 
-    &--large {
-      @include tablet {
-        height: 300px;
-      }
-    }
+  @include tablet {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
+  @include desktop {
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+}
+
+.header__section--large {
+  @include tablet {
+       height: 300px;
+  }
 }
 
 @include tablet {
   .header__feature-box {
     padding-top: 10px;
     padding-bottom: 8px;
+    margin-top: 1rem;
     display: flex;
     align-items: baseline;
   }
@@ -29,7 +40,6 @@
 
 
 .header__search {
-  margin-top: 1rem;
   flex-basis: 50%;
 }
 
@@ -41,7 +51,15 @@
   color: $color-primary-text;
   text-transform: uppercase;
   position: absolute;
-  top: 17px;
+  top: 6px;
+}
+
+.header__logo:hover {
+  opacity: 0.7;
+}
+
+.header__logo:active {
+  opacity: 0.4;
 }
 
 .header__link-list {
@@ -49,7 +67,8 @@
   flex-basis: 50%;
 
   @include mobile {
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     justify-content: space-between;
   }
 
@@ -134,4 +153,3 @@
     }
   }
 }
-
