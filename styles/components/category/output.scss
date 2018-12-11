@@ -1,0 +1,85 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.category__list {
+  display: none;
+
+  &--active-mobile {
+    @include mobile {
+      display: block;
+    }
+  }
+
+  @include mobile {
+    margin: 10px auto;
+    max-width: 80%;
+    border-top: 1px solid  $color-primary-text;
+    border-bottom: 1px solid  $color-primary-text;
+  }
+
+  @include tablet {
+    position: absolute;
+    background-color: #f7e184;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  @include tablet {
+    left: -15px;
+    right: -871px;
+    padding-left: 15px;
+  }
+
+  @include desktop {
+    left: -59px;
+    right: -871px;
+    padding-left: 59px;
+  }
+}
+
+
+.category__link {
+  color: $color-primary-text;
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: $typography-text-small;
+  line-height: 2.25rem;
+
+  @include tablet {
+    margin-right: 1rem;
+  }
+}
+
+.category__link:hover {
+  color: $color-search-text-hover;
+}
+
+.category__link:active {
+  color: $color-search-text;
+}
+
+.category-wrapper {
+  @include tablet {
+    position: relative;
+    display: block;
+    text-align: left;
+  }
+}
+
+.category__item {
+  @include tablet {
+    margin-right: 1rem;
+  }
+  @include desktop {
+    margin-right: 1.5rem;
+  }
+}
+
+@include tablet {
+  .category-wrapper:hover .category__list {
+      display: flex;
+      z-index: 1;
+    }
+}

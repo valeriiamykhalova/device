@@ -1,0 +1,50 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+@include until($desktop) {
+  .until-desktop\:display-none {
+    display: none;
+  }
+}
+
+@include until($tablet) {
+  .until-tablet\:display-none {
+    display: none;
+  }
+}
+.section {
+  padding: 1rem;
+
+  @include tablet {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @include desktop {
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+}
+
+.wrapper {
+
+  @include widescreen {
+    max-width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include tablet {
+  .tablet\:mt-16per {
+    margin-top: 16%;
+  }
+}
+

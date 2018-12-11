@@ -1,8 +1,11 @@
-html {
+@import "../../units/colors/utils";
 
+html {
+  background-color: $color-app-background;
 }
 
 
 body {
   margin: 0 auto;
+  max-width: 1440px;
 }

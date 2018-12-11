@@ -1,0 +1,57 @@
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+
+.search {
+  position: relative;
+  display: flex;
+
+  @include mobile {
+    padding-top: 8px;
+  }
+}
+
+.search__input {
+  padding-left: 1.9rem;
+  padding-right: 1rem;
+  font-size: $typography-text-small;
+  line-height: 1.875rem;
+  font-family: "Open Sans";
+  font-weight: 100;
+  border: 2px solid $color-text;
+  background-color: $color-text;
+  width: 100%;
+
+  @include tablet {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  @include desktop {
+    width: 357px;
+  }
+}
+
+.search__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search__input::placeholder {
+  color: $color-search-text;
+}
+
+.search__input:hover::placeholder {
+  color: $color-search-text-hover;
+}
+
+.search__input:focus {
+  outline: none;
+  color: $color-primary-text;
+  border-bottom: 2px solid $color-primary-text;
+}
+
+.search__input:focus ~ .search__button {
+  display: block;
+}

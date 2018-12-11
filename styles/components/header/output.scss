@@ -1,0 +1,137 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.header {
+  padding-top: 29px;
+  position: relative;
+
+  .section {
+    background-color: $color-text;
+
+    &--large {
+      @include tablet {
+        height: 300px;
+      }
+    }
+  }
+
+}
+
+@include tablet {
+  .header__feature-box {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+
+.header__search {
+  margin-top: 1rem;
+  flex-basis: 50%;
+}
+
+.header__logo {
+  font-size: $typography-h1;
+  line-height: $typography-h1;
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: $color-primary-text;
+  text-transform: uppercase;
+  position: absolute;
+  top: 17px;
+}
+
+.header__link-list {
+  display: flex;
+  flex-basis: 50%;
+
+  @include mobile {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+}
+
+.header__link {
+  margin-left: 20px;
+  color: $color-primary-text;
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: $typography-text-small;
+  line-height: 1.875rem;
+}
+
+.header__profile {
+  background-image: url("../icons/user.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    flex-grow: 6;
+  }
+}
+.header__compare {
+  background-image: url("../icons/compare.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    flex-grow: 1;
+  }
+}
+
+.header__basket {
+  background-image: url("../icons/cart.svg");
+  background-position: left;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}
+
+.header__profile:hover, .header__compare:hover, .header__basket:hover {
+  opacity: 0.7;
+}
+
+.header__profile:active, .header__compare:active, .header__basket:active {
+  opacity: 0.4;
+}
+
+@include tablet {
+  .header__feature {
+    margin-left: auto;
+    flex-basis: 50%;
+    display: flex;
+  }
+
+  .header__feature-left {
+    flex-grow: 1;
+    text-align: left;
+
+    @include desktop {
+      margin-left: -4px;
+      margin-right: 12px;
+    }
+  }
+
+  .header__feature-center {
+    flex-grow: 4;
+    margin-left: 12px;
+    text-align: left;
+    margin-right: 12px;
+  }
+
+  .header__feature-right {
+    flex-grow: 1;
+    text-align: right;
+    @include tablet {
+      margin-right: -4px;
+    }
+  }
+}
+
