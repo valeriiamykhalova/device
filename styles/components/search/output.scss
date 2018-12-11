@@ -18,8 +18,9 @@
   line-height: 1.875rem;
   font-family: "Open Sans";
   font-weight: 100;
-  border: 2px solid $color-text;
-  background-color: $color-text;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: transparent;
   width: 100%;
 
   @include tablet {
@@ -49,9 +50,16 @@
 .search__input:focus {
   outline: none;
   color: $color-primary-text;
-  border-bottom: 2px solid $color-primary-text;
+  border-bottom-color: $color-primary-text;
 }
 
 .search__input:focus ~ .search__button {
-  display: block;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.search__label {
+  cursor: pointer;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

@@ -48,3 +48,19 @@
   }
 }
 
+.position-relative {
+  position: relative;
+}
+
+.display-flex {
+  display: flex;
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+@include mobile {
+  .mobile-only\:section {
+    padding: 1rem;
+  }
+}

@@ -18,8 +18,9 @@
   cursor: pointer;
 }
 
-.feature-button:hover {
+.feature-button:hover, .feature-button:focus {
   color: $color-primary-text;
+  outline: none;
 }
 
 .feature-button:active {
@@ -45,22 +46,11 @@
   transition: all 150ms ease-in-out;
 }
 
-.feature-button:hover::before {
+.feature-button:hover::before, .feature-button:focus::before {
   height: 100%;
 }
 
 .feature-button:active::before {
   height: 100%;
   background-color: $color-primary-text;
-}
-
-.popular-item__navigation {
-  max-width: 80%;
-  margin: 15px auto;
-  display: flex;
-}
-
-.popular-item__button-wrapper {
-  font-size: 0;
-  margin-left: auto;
 }

@@ -3,85 +3,28 @@
 @import "../../units/colors/utils";
 
 .catalog {
-  @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
+  display: flex;
+  overflow: auto;
+  margin-bottom: 20px;
 
-.catalog__feature-container {
-  @include tablet {
-    display: flex;
-    flex-basis: 100%;
-    justify-content: space-around;
+  @include mobile {
+    margin-top: 20px;
   }
 
   @include desktop {
     justify-content: space-between;
-    flex-basis: 48.5%;
   }
 }
+
 .catalog-item-wrapper {
   @include mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-}
-.catalog-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  @include mobile {
-    margin-top: 20px;
+  @include until($desktop) {
+    padding-left: 10px;
+    padding-right: 10px;
   }
-}
-
-.catalog-item:hover .catalog-item__icon-box {
-   background-color: $color-button;
-}
-
-.catalog-item:active .catalog-item__icon-box {
-  background-color: $color-button;
-}
-
-.catalog-item:active .catalog-item__title {
-  opacity: 0.3;
-}
-
-.catalog-item:active .catalog-item__icon {
-  path {
-    fill: $color-item-active;
-  }
-}
-
-.catalog-item__title {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  font-size: $typography-text-medium;
-  line-height: 1.5rem;
-  font-family: "Gilroy";
-  font-weight: bold;
-  color: $color-primary-text;
-}
-
-.catalog-item__icon-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $color-text;
-  width: 160px;
-  height: 160px;
-  position: relative;
-
-  @include tablet {
-
-  }
-}
-
-.catalog-item__icon--bottom {
-  position: absolute;
-  bottom: 2px;
 }
