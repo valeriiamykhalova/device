@@ -1,0 +1,65 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.additional-info-item {
+  display: none;
+}
+
+.additional-info-item__title {
+  font-size: $typography-h2;
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: $color-primary-text;
+
+  @include mobile {
+    text-align: center;
+  }
+
+  @include tablet {
+    margin-bottom: 1rem;
+  }
+}
+
+.additional-info-item__description {
+  font-size: $typography-text-small;
+  line-height: 1.875rem;
+  font-family: "Open Sans";
+  font-weight: 100;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.additional-info-item__image {
+  @include mobile {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @include tablet {
+    display: flex;
+    padding-left: 10px;
+    margin-left: auto;
+  }
+}
+
+.additional-info-item__box {
+  @include tablet {
+    min-height: 207px;
+    margin-left: 20px;
+    max-width: 295px;
+  }
+
+  @include desktop {
+    margin-left: 30px;
+    max-width: 380px;
+  }
+
+  @include widescreen {
+    margin-left: 115px;
+    max-width: 440px;
+  }
+}

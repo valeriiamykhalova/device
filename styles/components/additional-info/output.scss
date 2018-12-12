@@ -1,0 +1,100 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.additional-info {
+
+  @include tablet {
+      position: absolute;
+      width: 88%;
+      top: -87px;
+      display: flex;
+      align-items: center;
+  }
+
+  @include desktop {
+    width: 80%;
+  }
+}
+
+.additional-info-section {
+
+  background-color: $color-first-section;
+
+  @include tablet {
+    margin-top: 162px;
+    position: relative;
+    height: 288px;
+  }
+}
+
+.additional-info-slider {
+  flex-grow: 1;
+}
+
+.additional-info__switchers {
+
+  @include mobile {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  @include tablet {
+    border-right: 7px solid $color-primary-text;
+    padding-bottom: 70px;
+    padding-top: 80px;
+    width: 26%;
+  }
+}
+
+.additional-info__btn {
+  display: inline-block;
+  text-align: center;
+
+  @include  mobile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+
+#info-1:checked ~ .additional-info-slider [data-info="1"],
+#info-2:checked ~ .additional-info-slider [data-info="2"],
+#info-3:checked ~ .additional-info-slider [data-info="3"] {
+  @include mobile {
+    display: block;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+#info-1:checked ~ .additional-info__switchers [for="info-1"],
+#info-2:checked ~ .additional-info__switchers [for="info-2"],
+#info-3:checked ~ .additional-info__switchers [for="info-3"] {
+  color: $color-text;
+
+  @include tablet {
+    position: static;
+  }
+}
+
+
+#info-1:checked ~ .additional-info__switchers [for="info-1"]::before,
+#info-2:checked ~ .additional-info__switchers [for="info-2"]::before,
+#info-3:checked ~ .additional-info__switchers [for="info-3"]::before {
+  height: 100%;
+  background-color: $color-primary-text;
+}
+
+.additional-info__feature-box {
+
+  @include tablet {
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
