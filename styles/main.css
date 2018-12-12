@@ -2590,6 +2590,98 @@ body {
   top: 0;
 }
 
+@media screen and (min-width: 768px), print {
+  .partners-list-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.partners-list {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .partners-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px), print {
+  .partner {
+    flex-grow: 1;
+  }
+}
+
+.partner__logo {
+  display: block;
+  height: 100px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .partner__logo {
+    background-position: center;
+  }
+}
+
+.dji-logo {
+  background-image: url("../images/logo-1.jpg");
+}
+
+.dji-logo:hover {
+  background-image: url("../images/logo-1-hover.jpg");
+}
+
+.sp-gadgets-logo {
+  background-image: url("../images/logo-2.jpg");
+}
+
+.sp-gadgets-logo:hover {
+  background-image: url("../images/logo-2-hover.jpg");
+}
+
+.go-pro-logo {
+  background-image: url("../images/logo-3.jpg");
+}
+
+.go-pro-logo:hover {
+  background-image: url("../images/logo-3-hover.jpg");
+}
+
+.vive-logo {
+  background-image: url("../images/logo-4.jpg");
+}
+
+.vive-logo:hover {
+  background-image: url("../images/logo-4-hover.jpg");
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.is-unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.is-overlay {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .catalog-item {
   display: flex;
   flex-direction: column;
