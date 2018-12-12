@@ -1,0 +1,69 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.partners-list-section {
+
+  @include  tablet {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.partners-list {
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.partner {
+  @include tablet {
+    flex-grow: 1;
+  }
+}
+
+.partner__logo {
+  display: block;
+  height: 100px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include mobile {
+    background-position: center;
+  }
+}
+
+.dji-logo {
+  background-image: url("../images/logo-1.jpg");
+}
+
+.dji-logo:hover {
+  background-image: url("../images/logo-1-hover.jpg");
+}
+
+.sp-gadgets-logo {
+  background-image: url("../images/logo-2.jpg");
+}
+
+.sp-gadgets-logo:hover {
+  background-image: url("../images/logo-2-hover.jpg");
+}
+
+.go-pro-logo {
+  background-image: url("../images/logo-3.jpg");
+}
+
+.go-pro-logo:hover {
+  background-image: url("../images/logo-3-hover.jpg");
+}
+
+.vive-logo {
+  background-image: url("../images/logo-4.jpg");
+}
+
+.vive-logo:hover {
+  background-image: url("../images/logo-4-hover.jpg");
+}

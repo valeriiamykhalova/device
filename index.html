@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css"/>
   </head>
   <body>
-    <header class="header wrapper">
+    <header style="display: none" class="header wrapper">
       <div class="header__section header__section--large">
         <a href="#" class="header__logo">Device</a>
         <div class="header__feature-box">
@@ -87,7 +87,7 @@
     </header>
     <main>
       <h1 class="visually-hidden">Device - сайт с огромным выбором гаджетов!</h1>
-        <section class="wrapper position-relative">
+        <section style="display: none" class="wrapper position-relative">
           <h2 class="visually-hidden">Популярные товары</h2>
 
           <input id="slide-1" name="main-products" class="visually-hidden main-products-input" type="radio" checked />
@@ -245,7 +245,7 @@
           </ul>
         </section>
 
-        <section class="wrapper mobile-only:section">
+        <section style="display: none" class="wrapper mobile-only:section">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <ul class="catalog">
             <li class="catalog-item-wrapper">
@@ -324,7 +324,7 @@
             </li>
           </ul>
         </section>
-        <section>
+        <section style="display: none" >
           <h2>Информация про доставку, гарантию и кредит</h2>
           <ul>
             <li>
@@ -357,20 +357,20 @@
           <img src="icons/credit.svg" alt="Кредит" role="presentation"/>
 
         </section>
-        <section>
-          <h2>Наши партнеры</h2>
-          <ul>
-            <li>
-              <span aria-label="Dji"></span>
+        <section class="wrapper mobile-only:section partners-list-section">
+          <h2 class="visually-hidden">Наши партнеры</h2>
+          <ul class="partners-list">
+            <li class="partner">
+              <span class="partner__logo dji-logo" aria-label="Dji"></span>
             </li>
-            <li>
-              <span aria-label="SP Gadgets"></span>
+            <li class="partner">
+              <span class="partner__logo sp-gadgets-logo" aria-label="SP Gadgets"></span>
             </li>
-            <li>
-              <span aria-label="GoPro"></span>
+            <li class="partner">
+              <span class="partner__logo go-pro-logo" aria-label="GoPro"></span>
             </li>
-            <li>
-              <span aria-label="Vive"></span>
+            <li class="partner">
+              <span class="partner__logo vive-logo" aria-label="Vive"></span>
             </li>
           </ul>
         </section>
