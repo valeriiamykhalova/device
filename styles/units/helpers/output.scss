@@ -33,6 +33,23 @@
   }
 }
 
+.section-lg {
+
+  @include mobile {
+    padding: 1rem;
+  }
+
+
+  @include tablet {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @include desktop {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+}
+
 .wrapper {
 
   @include widescreen {

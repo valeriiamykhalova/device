@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css"/>
   </head>
   <body>
-    <header class="header wrapper">
+    <header style="display: none;" class="header wrapper">
       <div class="header__section header__section--large">
         <a href="#" class="header__logo">Device</a>
         <div class="header__feature-box">
@@ -87,7 +87,7 @@
     </header>
     <main>
       <h1 class="visually-hidden">Device - сайт с огромным выбором гаджетов!</h1>
-        <section class="wrapper position-relative">
+        <section style="display: none;" class="wrapper position-relative">
           <h2 class="visually-hidden">Популярные товары</h2>
 
           <input id="slide-1" name="main-products" class="visually-hidden main-products-input" type="radio" checked />
@@ -111,7 +111,7 @@
                     Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                   </p>
                   <div class="popular-item__info-navigation">
-                    <a href="#" class="feature-button">
+                    <a href="#" class="feature-button feature-button--lg">
                       <span class="feature-button__inner">Подробнее</span>
                     </a>
 
@@ -324,37 +324,68 @@
             </li>
           </ul>
         </section>
-        <section>
-          <h2>Информация про доставку, гарантию и кредит</h2>
-          <ul>
-            <li>
-              <button type="button">Доставка</button>
-            </li>
-            <li>
-              <button type="button">Гарантия</button>
-            </li>
-            <li>
-              <button type="button">Кредит</button>
-            </li>
-          </ul>
+        <section class="additional-info-section section-lg">
+          <h2 class="visually-hidden">Информация про доставку, гарантию и кредит</h2>
 
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-          <img src="icons/delivery.svg" alt="Доставка" role="presentation"/>
+          <div class="additional-info">
+            <input id="info-1" name="additional-info" class="visually-hidden additional-info-input" type="radio" checked />
+            <input id="info-2" name="additional-info" class="visually-hidden additional-info-input" type="radio" />
+            <input id="info-3" name="additional-info" class="visually-hidden additional-info-input" type="radio" />
 
-          <h3>Гарантия</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.
-          </p>
-          <img src="icons/warranty.svg" alt="Гарантия" role="presentation"/>
+            <ul class="additional-info__switchers">
+              <li class="additional-info__feature-box">
+                <label for="info-1" class="feature-button feature-button--md additional-info__btn">
+                  <span class="feature-button__inner">Доставка</span>
+                </label>
+              </li>
+              <li class="additional-info__feature-box">
+                <label for="info-2" class="feature-button feature-button--md additional-info__btn">
+                  <span class="feature-button__inner">Гарантия</span>
+                </label>
+              </li>
+              <li class="additional-info__feature-box">
+                <label for="info-3" class="feature-button feature-button--md additional-info__btn">
+                  <span class="feature-button__inner">Кредит</span>
+                </label>
+              </li>
+            </ul>
 
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-            условия кредита. Выгодные для нашего банка, разумеется.
-          </p>
-          <img src="icons/credit.svg" alt="Кредит" role="presentation"/>
+            <ul class="additional-info-slider">
+              <li class="additional-info-item" data-info="1">
+                <div class="additional-info-item__box">
+                  <h3 class="additional-info-item__title">Доставка</h3>
+                  <p class="additional-info-item__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                    Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+                  </p>
+                </div>
+                <div class="additional-info-item__image">
+                  <img src="icons/delivery.svg" alt="Доставка" role="presentation"/>
+                </div>
+              </li>
+              <li class="additional-info-item" data-info="2">
+                <div class="additional-info-item__box">
+                  <h3 class="additional-info-item__title">Гарантия</h3>
+                  <p class="additional-info-item__description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                    Товар, не дом, конечно же.
+                  </p>
+                </div>
+                <div class="additional-info-item__image">
+                  <img src="icons/warranty.svg" alt="Гарантия" role="presentation"/>
+                </div>
+              </li>
+              <li class="additional-info-item" data-info="3">
+                <div class="additional-info-item__box">
+                  <h3 class="additional-info-item__title">Кредит</h3>
+                  <p class="additional-info-item__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                    условия кредита. Выгодные для нашего банка, разумеется.
+                  </p>
+                </div>
+                <div class="additional-info-item__image">
+                  <img src="icons/credit.svg" alt="Кредит" role="presentation"/>
+                </div>
+              </li>
+            </ul>
+          </div>
 
         </section>
         <section>
