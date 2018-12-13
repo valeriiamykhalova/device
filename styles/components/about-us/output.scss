@@ -1,0 +1,49 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.about-us {
+
+  @include mobile {
+    margin-top: 20px;
+  }
+
+  @include tablet {
+    margin-top: 40px;
+  }
+}
+
+.about-us__item {
+  padding-left: 33px;
+  font-size: $typography-text-medium;
+  line-height: 1.5rem;
+  color: $color-primary-text;
+  font-family: "Gilroy";
+  font-weight: bold;
+  position: relative;
+
+  @include mobile {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  @include tablet {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.about-us__item::before {
+  content: "";
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-image: url("../icons/list-item.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
