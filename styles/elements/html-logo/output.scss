@@ -1,0 +1,20 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+
+.html-logo {
+  cursor: pointer;
+}
+
+.html-logo:hover {
+  path {
+    fill: $color-footer-item-hover;
+  }
+}
+
+.html-logo:active {
+  path {
+    fill: $color-footer-item-active;
+  }
+}

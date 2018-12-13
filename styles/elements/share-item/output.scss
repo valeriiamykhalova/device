@@ -1,0 +1,30 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.share-item {
+  path {
+    fill: $color-logout-footer-text;
+  }
+  rect {
+    fill: $color-logout-footer-text;
+  }
+}
+
+.share-item:hover {
+  path {
+    fill: $color-share-background-hover;
+  }
+  rect {
+    fill: $color-share-background-hover;
+  }
+}
+
+.share-item:active {
+  path {
+    fill: $color-share-background-active;
+  }
+  rect {
+    fill: $color-share-background-active;
+  }
+}

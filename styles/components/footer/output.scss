@@ -1,0 +1,159 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.footer {
+  background-color: $color-footer;
+
+  @include mobile {
+    padding: 1rem;
+  }
+
+  @include tablet {
+    padding: 25px 40px;
+  }
+  @include desktop {
+    padding: 66px 140px;
+  }
+}
+
+.footer__logo {
+  font-size: $typography-h1;
+  line-height: $typography-h1;
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: $color-footer-item;
+  text-transform: uppercase;
+}
+
+.footer__logo:hover {
+  color: $color-footer-item-hover;
+}
+
+.footer__logo:active {
+  color: $color-footer-item-active;
+}
+
+.footer__info {
+  color: $color-app-background;
+  font-size: $typography-text-small;
+  line-height: 1.875rem;
+  font-family: "Open Sans";
+  font-weight: 100;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.footer__link-list {
+  display: flex;
+
+  @include mobile {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+}
+
+.footer__link {
+  cursor: pointer;
+  margin-left: 10px;
+  color: $color-app-background;
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: $typography-text-small;
+  line-height: 1.875rem;
+}
+
+.footer__item {
+
+  @include tablet {
+    margin-left: 42px;
+  }
+}
+
+.footer__item:hover {
+  opacity: 0.7;
+}
+
+.footer__item:active {
+  opacity: 0.3;
+}
+
+.footer__link:hover, .footer__link:active {
+  color: $color-app-background;
+}
+
+.footer__profile {
+  path {
+    fill: $color-footer-item;
+  }
+}
+.footer__compare, .footer__basket {
+  fill: $color-footer-item;
+}
+
+.footer__navbar {
+
+  @include mobile {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.footer__share {
+  display: flex;
+
+  @include mobile {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+}
+
+.footer__share-item {
+  margin-left: 23px;
+  margin-right: 23px;
+}
+
+.footer__html-logo {
+  text-align: center;
+}
+
+.footer-wrapper {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-wrapper--central {
+  @include tablet {
+    flex-direction: column;
+    height: 120px;
+  }
+
+  @include widescreen {
+    flex-direction: row;
+    height: auto;
+  }
+}
+
+.footer__navbar-item {
+  @include tablet {
+    display: inline;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+}
+
+.footer__line {
+  @include tablet {
+    width: 80px;
+    height: 7px;
+    background-color: $color-footer-item;
+  }
+}
