@@ -21,12 +21,24 @@
   }
 }
 
+.navbar__item--white {
+  color: $color-app-background;
+}
+
 .navbar__item:hover {
   color: $color-search-text-hover;
 }
 
+.navbar__item--white:hover {
+  color: $color-share-background-hover;
+}
+
 .navbar__item:active {
   color: $color-search-text;
+}
+
+.navbar__item--white:active {
+  color: $color-logout-footer-text;
 }
 
 .navbar__button {
