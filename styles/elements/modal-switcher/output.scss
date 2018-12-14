@@ -1,0 +1,42 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/colors/utils";
+
+.modal-switcher {
+  cursor: pointer;
+  position: absolute;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+
+  @include mobile {
+    top: 10px;
+    right: 10px;
+  }
+
+  @include tablet {
+    top: 25px;
+    right: 25px;
+  }
+}
+
+.modal-switcher__close {
+  @include mobile {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.modal-switcher__close:hover {
+  path {
+    fill: $color-button;
+  }
+}
+
+.modal-switcher__close:active {
+  opacity: 0.5;
+}
+
+.modal-switcher:hover, .modal-switcher:focus {
+  color: $color-primary-text;
+  outline: none;
+}

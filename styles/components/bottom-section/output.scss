@@ -1,0 +1,126 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.bottom-section {
+  @include mobile {
+    padding: 1rem;
+  }
+
+  @include tablet {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+  }
+  @include desktop {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  @include widescreen {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.bottom-section__title {
+  font-size: $typography-h2;
+  line-height: 3rem;
+  color: $color-primary-text;
+  font-family: "Gilroy";
+  font-weight: bold;
+
+  @include mobile {
+    margin-top: 15px;
+    padding-top: 10px;
+  }
+
+  @include tablet {
+    margin-top: 39px;
+  }
+
+}
+
+.bottom-section__description {
+  font-size: $typography-text-small;
+  line-height: 1.875rem;
+  color: $color-primary-text;
+  font-family: "Open Sans";
+  font-weight: 100;
+
+  @include mobile {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  @include tablet {
+    margin-top: 39px;
+  }
+}
+
+.bottom-section__btn {
+  display: inline-block;
+  text-align: center;
+
+  @include mobile {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @include tablet {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+
+.bottom-section__contacts-image {
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+
+  @include tablet {
+    margin-top: 52px;
+  }
+}
+
+.bottom-section__about-us {
+  position: relative;
+
+  @include tablet {
+    padding-right: 30px;
+  }
+
+  @include desktop {
+    padding-right: 80px;
+  }
+
+  @include widescreen {
+    padding-right: 136px;
+  }
+}
+
+.bottom-section__contacts-btn {
+  @include tablet {
+    margin-top: auto;
+  }
+}
+
+.bottom-section__contacts {
+  position: relative;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.bottom-section__contacts::before, .bottom-section__about-us::before {
+  content: "";
+  height: 7px;
+  width: 80px;
+  background-color: $color-primary-text;;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

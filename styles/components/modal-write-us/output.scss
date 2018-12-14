@@ -1,0 +1,39 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.modal-write-us {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-write-us__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modal-write-us__content {
+  position: relative;
+  background-color: $color-app-background;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+
+  @include mobile {
+    width: calc(100% - 30px);
+    height: auto;
+  }
+
+  @include tablet {
+    height: 564px;
+    width: 965px;
+  }
+}
