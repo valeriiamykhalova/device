@@ -404,30 +404,55 @@
             </p>
             <h4 class="visually-hidden">Device на карте</h4>
             <img class="bottom-section__contacts-image" src="images/map.png" alt="Наш офис на карте">
+
+            <div class="visually-hidden modal-map">
+              <div class="modal-map__background"></div>
+              <div class="modal-map__content">
+                <img class="modal-map__content-image" src="images/map-big.png" alt="Наш офис на карте">
+                <button type="button" class="modal-switcher">
+                  <svg class="modal-switcher__close" width="55" height="55" viewBox="0 0 55 55">
+                    <path fill="#f7e296" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
             <a href="#" class="feature-button feature-button--extra-lg bottom-section__btn bottom-section__contacts-btn">
               <span class="feature-button__inner">Напишите нам</span>
             </a>
             <h4 class="visually-hidden">Напишите нам</h4>
-            <form class="visually-hidden" name="write-us" method="post">
-              <p>
-                <label for="write-us-your-name">Ваше имя:</label>
-                <input id="write-us-your-name" type="text"  placeholder="Имя Фамилия" />
-              </p>
-              <p>
-                <label for="write-us-your-email">Ваш e-mail:</label>
-                <input id="write-us-your-email" type="text"  placeholder="email@example.com" />
-              </p>
-              <p>
-                <label for="write-us-letter">Текст письма:</label>
-                <input id="write-us-letter" type="text"  placeholder="В свободной форме" />
-              </p>
-              <button type="submit">Отправить</button>
-              <button type="button">
-                <svg width="55" height="55" viewBox="0 0 55 55">
-                  <path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
-                </svg>
-              </button>
-            </form>
+
+            <div class="visually-hidden modal-write-us">
+              <div class="modal-write-us__background"></div>
+              <div class="modal-write-us__content">
+
+                <form class="form-write-us" name="write-us" method="post">
+                  <div class="form-write-us-wrapper">
+                    <p class="form-write-us__group">
+                      <label class="form-write-us__label" for="write-us-your-name">Ваше имя:</label>
+                      <input class="form-write-us__input" id="write-us-your-name" type="text"  placeholder="Имя Фамилия" />
+                    </p>
+                    <p class="form-write-us__group">
+                      <label class="form-write-us__label" for="write-us-your-email">Ваш e-mail:</label>
+                      <input class="form-write-us__input" id="write-us-your-email" type="text"  placeholder="email@example.com" />
+                    </p>
+                  </div>
+                  <p class="form-write-us__group">
+                    <label class="form-write-us__label" for="write-us-letter">Текст письма:</label>
+                    <input class="form-write-us__input form-write-us__input--large" id="write-us-letter" type="text"  placeholder="В свободной форме" />
+                  </p>
+                  <button class="feature-button feature-button--form form-write-us__btn" type="submit">
+                    <span class="feature-button__inner">Отправить</span></button>
+                </form>
+
+                <button type="button" class="modal-switcher">
+                  <svg class="modal-switcher__close" width="55" height="55" viewBox="0 0 55 55">
+                    <path fill="#f7e296" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
           </section>
         </section>
     </main>

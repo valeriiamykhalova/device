@@ -1,0 +1,89 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.form-write-us {
+  @include mobile {
+    padding: 1rem;
+  }
+
+  @include tablet {
+    padding: 4rem;
+  }
+
+  @include desktop {
+    padding: 100px;
+  }
+}
+
+.form-write-us__label {
+  margin-bottom: 9px;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: $typography-text-medium;
+  line-height: 1.5rem;
+}
+
+.form-write-us__group {
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.form-write-us__input {
+  border: none;
+  background-color: $color-input-background;
+
+  @include mobile {
+    padding: 0.5rem;
+  }
+
+  @include tablet {
+    padding: 1rem;
+    width: 300px;
+  }
+
+  @include desktop {
+    width: 360px;
+  }
+}
+
+.form-write-us__input--large {
+  width: 100%;
+}
+
+.form-write-us__input::placeholder {
+  color: $color-input-text;
+}
+
+.form-write-us__input:hover {
+  background-color: $color-input-background-hover;
+}
+
+.form-write-us__input:focus {
+  outline-color: $color-primary;
+  background-color: $color-app-background;
+  color: $color-primary-text;
+}
+
+.form-write-us-wrapper {
+  @include tablet {
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form-write-us__btn {
+  @include mobile {
+    margin-top: 20px;
+  }
+
+  @include tablet {
+    margin-top: 40px;
+  }
+}

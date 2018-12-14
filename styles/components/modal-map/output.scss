@@ -1,0 +1,36 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/colors/utils";
+
+.modal-map {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-map__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modal-map__content {
+  position: relative;
+
+  @include mobile {
+    max-width: calc(100% - 30px);
+    height: auto;
+  }
+
+  @include tablet {
+    max-height: 564px;
+    max-width: 965px;
+  }
+}

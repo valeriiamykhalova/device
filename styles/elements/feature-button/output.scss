@@ -19,6 +19,16 @@
   cursor: pointer;
 }
 
+.feature-button--form {
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 200px;
+  }
+}
+
 .feature-button--lg {
   width: 220px;
 }
@@ -70,6 +80,10 @@
   margin-bottom: auto;
   background-color: $color-button;
   transition: all 150ms ease-in-out;
+
+  @include mobile {
+    height: 100%;
+  }
 }
 
 .feature-button:hover::before, .feature-button:focus::before {
