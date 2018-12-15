@@ -46,6 +46,10 @@
   .tablet\:mt-16per {
     margin-top: 16%;
   }
+
+  .tablet\:flex-grow-6 {
+    flex-grow: 6;
+  }
 }
 
 .position-relative {
@@ -54,6 +58,7 @@
 
 .display-flex {
   display: flex;
+  flex-grow: 1;
   @include mobile {
     flex-direction: column;
   }
@@ -63,4 +68,8 @@
   .mobile-only\:section {
     padding: 1rem;
   }
+}
+
+.ml-16 {
+  margin-left: 16px;
 }

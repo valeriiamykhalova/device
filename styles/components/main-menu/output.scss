@@ -1,0 +1,30 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.main-menu__title {
+  color: $color-primary-text;
+  font-family: "Gilroy";
+  font-weight: bold;
+
+  @include mobile {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  @include tablet {
+    padding-top: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: $typography-h2;
+    line-height: 3rem;
+  }
+
+  @include desktop {
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+}
+
