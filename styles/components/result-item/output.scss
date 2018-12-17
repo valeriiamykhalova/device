@@ -1,0 +1,135 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.result-item {
+  @include mobile {
+    margin-top: 40px;
+  }
+
+  @include tablet {
+    margin-top: 70px;
+  }
+
+}
+
+.result-item__image {
+  @include mobile {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.result-item__group {
+  @include mobile {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+}
+
+.result-item__title {
+  color: $color-primary-text;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: $typography-text-medium;
+  line-height: 1.5rem;
+
+  @include tablet {
+    padding-right: 5px;
+    flex-basis: 70%;
+  }
+}
+
+.result-item__price {
+  color: $color-primary-text;
+  font-family: "Gilroy";
+  font-weight: 100;
+  font-size: $typography-text;
+  line-height: 1.5rem;
+
+  @include tablet {
+    flex-basis: 30%;
+    text-align: right;
+  }
+}
+
+.result-item__image-box {
+  position: relative;
+}
+
+.result-item__image-box:hover .result-item__image {
+  opacity: 0.5;
+}
+
+.result-item__image-box:hover .result-item__overlay {
+  display: inline-block;
+}
+
+.result-item__overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  transform: translateY(-20%);
+  text-align: center;
+}
+
+.result-item__overlay-compare {
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: $color-item-overlay-text;
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: $typography-text-xx-small;
+  line-height: 2.25rem;
+}
+
+.result-item__overlay-compare:hover {
+  color: $color-primary-text;
+}
+
+.result-item__overlay-compare:active {
+  color: $color-item-overlay-text-active;
+}
+
+.result-item__overlay-compare:focus {
+  outline: none;
+}
+
+.result-item-list {
+
+  @include tablet {
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  @include desktop {
+    padding-left: 59px;
+  }
+
+  @include widescreen {
+    justify-content: space-between;
+  }
+}
+
+.result-item__image--new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 61px;
+  height: 61px;
+  background-image: url("../images/new.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,13 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.result {
+  @include mobile {
+    padding: 1rem;
+  }
+
+  @include tablet {
+    background-color: $color-app-background;
+  }
+}

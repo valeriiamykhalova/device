@@ -1,0 +1,31 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+fieldset {
+  border: 0 none;
+}
+
+
+.filter-item__title {
+  border-top: 2px solid $color-primary-text;
+  padding-top: 10px;
+  width: 100%;
+  color: $color-primary-text;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: $typography-text-medium;
+  line-height: 1.5rem;
+
+  @include mobile {
+    text-align: center;
+  }
+
+  @include tablet {
+    padding-bottom: 10px;
+  }
+}
+
+.filter-item {
+  margin-top: 36px;
+}

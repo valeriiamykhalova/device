@@ -1,0 +1,76 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.pagination-section {
+  @include  mobile {
+    padding: 1rem;
+  }
+
+  @include tablet {
+    padding-left: 15px;
+    margin-bottom: 78px;
+  }
+
+  @include desktop {
+    padding-left: 59px;
+  }
+}
+
+.pagination {
+  background-color: $color-second-section;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.pagination__btn {
+  color: $color-primary-text;
+  font-family: "Gilroy";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: $typography-text;
+  line-height: 1.5rem;
+  letter-spacing: 0.2em;
+
+  @include mobile {
+    padding: 10px;
+  }
+
+  @include tablet {
+    padding: 22px 30px;
+  }
+}
+
+.pagination__btn:hover {
+  background-color: $color-pagination-hover;
+  color: $color-primary-text;
+}
+
+.pagination__btn:active {
+  background-color: $color-pagination-hover;
+  color: $color-pagination-button-text-hover;
+}
+
+.pagination__number {
+  color: $color-pagination-text;
+  font-family: "Gilroy";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: $typography-text;
+  line-height: 1.5rem;
+  letter-spacing: 0.2em;
+
+  @include mobile {
+    padding: 5px;
+  }
+
+  @include tablet {
+    padding: 5px;
+    margin: 10px;
+  }
+}
+
+.pagination__number--active {
+  color: $color-primary-text;
+}

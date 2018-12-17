@@ -1,0 +1,22 @@
+@import "../../units/colors/utils";
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+
+.order__item .order__item-input:checked + .order__item-icon {
+  path {
+    fill: $color-primary-text;
+  }
+}
+
+.order__item:hover {
+  path {
+    fill: $color-form-control-hover;
+  }
+}
+
+.order__item {
+  cursor: pointer;
+
+  @include mobile {
+    padding: 5px;
+  }
+}

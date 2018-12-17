@@ -3,7 +3,8 @@
 @import "../../units/colors/utils";
 
 .feature-button {
-  padding: 6px 38px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border: 0;
   font-family: "Gilroy";
   letter-spacing: 0.2em;
@@ -16,6 +17,41 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+}
+
+.feature-button--form {
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 200px;
+  }
+}
+
+.feature-button--lg {
+  width: 220px;
+}
+
+.feature-button--extra-lg {
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 260px;
+  }
+}
+
+.feature-button--md {
+
+  @include mobile {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 160px;
+  }
 }
 
 .feature-button:hover, .feature-button:focus {
@@ -44,6 +80,10 @@
   margin-bottom: auto;
   background-color: $color-button;
   transition: all 150ms ease-in-out;
+
+  @include mobile {
+    height: 100%;
+  }
 }
 
 .feature-button:hover::before, .feature-button:focus::before {

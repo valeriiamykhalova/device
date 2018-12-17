@@ -16,6 +16,17 @@
 @import "components/catalog-item/output";
 @import "components/main-menu/output";
 @import "components/breadcrumbs/output";
+@import "components/filter/output";
+@import "components/filter-item/output";
+@import "components/sort/output";
+@import "components/order/output";
+@import "components/result/output";
+@import "components/result-item/output";
+@import "components/pagination/output";
+@import "components/goods/output";
 
 @import "elements/search__button/output";
 @import "elements/feature-button/output";
+@import "elements/filter-checkbox/output";
+@import "elements/filter-radio/output";
+@import "elements/filter-range/output";
