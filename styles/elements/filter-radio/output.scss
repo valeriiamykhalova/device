@@ -1,0 +1,38 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.filter-radio {
+  margin-top: 16px;
+  display: block;
+  position: relative;
+}
+
+.filter-radio input[type=radio] {
+  display:none;
+}
+
+.filter-radio__label::before {
+  cursor: pointer;
+  content: '';
+  position: absolute;
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url("../icons/radio-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-radio input[type=radio]:checked + .filter-radio__label::before {
+  height: 25px;
+  width: 25px;
+  background-image: url("../icons/radio-on.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-radio__label {
+  padding-left: 40px;
+  color: $color-primary-text;
+  font-size: $typography-text-x-small;
+  font-family: "Open Sans";
+  font-weight: 100;
+}

@@ -42,9 +42,33 @@
   }
 }
 
+.wrapper-left {
+
+  @include widescreen {
+    max-width: 328px;
+    margin-left: auto;
+  }
+}
+
+.wrapper-right {
+
+  @include widescreen {
+    max-width: 832px;
+    margin-right: auto;
+  }
+}
+
 @include tablet {
   .tablet\:mt-16per {
     margin-top: 16%;
+  }
+
+  .tablet\:flex-grow-6 {
+    flex-grow: 6;
+  }
+
+  .tablet\:ml-auto {
+    margin-left: auto;
   }
 }
 
@@ -54,6 +78,7 @@
 
 .display-flex {
   display: flex;
+  flex-grow: 1;
   @include mobile {
     flex-direction: column;
   }
@@ -63,4 +88,16 @@
   .mobile-only\:section {
     padding: 1rem;
   }
+
+  .mobile\:mt-15 {
+    margin-top: 15px;
+  }
+}
+
+.ml-16 {
+  margin-left: 16px;
+}
+
+.mr-10 {
+  margin-right: 10px;
 }

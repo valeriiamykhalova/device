@@ -1,0 +1,20 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/colors/utils";
+
+.goods {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.goods__filter {
+  @include tablet {
+    flex-basis: 32.5%;
+  }
+}
+
+.goods__sort-result {
+  @include tablet {
+    flex-basis: 67.5%;
+  }
+}

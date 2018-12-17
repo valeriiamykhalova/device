@@ -1,0 +1,38 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.filter-checkbox {
+  margin-top: 16px;
+  display: block;
+  position: relative;
+}
+
+.filter-checkbox input[type=checkbox] {
+  display:none;
+}
+
+.filter-checkbox__label::before {
+  cursor: pointer;
+  content: '';
+  position: absolute;
+  display: block;
+  height: 23px;
+  width: 23px;
+  background-image: url("../icons/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox input[type=checkbox]:checked + .filter-checkbox__label::before {
+  height: 23px;
+  width: 27px;
+  background-image: url("../icons/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-checkbox__label {
+  padding-left: 40px;
+  color: $color-primary-text;
+  font-size: $typography-text-x-small;
+  font-family: "Open Sans";
+  font-weight: 100;
+}

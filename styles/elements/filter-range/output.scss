@@ -1,0 +1,66 @@
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.filter-range {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.filter-range__button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+  height: 23px;
+  width: 20px;
+  background-image: url("../icons/filter-button.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-range__button--start {
+  left: 0;
+}
+
+.filter-range__button--end {
+  left: 60%;
+}
+
+.filter-range__line {
+  position: relative;
+  height: 2px;
+  background-color: $color-radio-line;
+}
+
+.filter-range__line--active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $color-radio-line-active;
+  width: 60%;
+}
+
+.filter-range__text {
+  margin-top: 10px;
+  position: absolute;
+  display: block;
+  color: $color-radio-text;
+  font-family: "Gilroy";
+  font-weight: 100;
+  font-size: $typography-text-x-small;
+  line-height: 1.5rem;
+}
+
+.filter-range__text--start {
+  top: 0;
+  left: 0;
+}
+
+.filter-range__text--end {
+  top: 0;
+  left: 60%;
+  margin-left: -10px;
+}

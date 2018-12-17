@@ -1,0 +1,71 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.breadcrumbs {
+  @include mobile {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  @include tablet {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 54px;
+  }
+
+  @include desktop {
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+}
+
+.breadcrumb__link {
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: $typography-text-x-small;
+  line-height: 1.5rem;
+  color: $color-navbar-text;
+}
+
+.breadcrumb__link:hover {
+  color: $color-navbar-text-hover;
+}
+
+.breadcrumb__link:active {
+  opacity: 0.3;
+}
+
+.breadcrumb {
+  padding-right: 22px;
+  display: inline-block;
+  position: relative;
+}
+
+.breadcrumb::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(70%);
+  display: inline-block;
+  border: 5px solid $color-primary-text;
+  border-right: none;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+}
+
+
+.breadcrumb::after {
+  content: "";
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  transform: translateY(70%);
+  display: inline-block;
+  border: 4px solid $color-app-background;
+  border-right: none;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+}

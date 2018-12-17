@@ -1,0 +1,90 @@
+@import "../../vendors/bulma/sass/utilities/_all.sass";
+@import "../../units/typography/utils";
+@import "../../units/colors/utils";
+
+.sort {
+  background-color: $color-secondary;
+  position: relative;
+  @include mobile {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  @include tablet {
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  @include desktop {
+    padding-left: 59px;
+  }
+}
+
+.sort::after {
+  @include widescreen {
+    content: "";
+    margin-left: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 300%;
+    background-color: $color-secondary;
+  }
+}
+
+.sort__item {
+  @include mobile {
+    padding: 0.2rem;
+  }
+
+  @include tablet {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+
+.sort__title {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $color-primary-text;
+  font-family: "Gilroy";
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  font-size: $typography-text;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+
+  @include mobile {
+    border-top: 2px solid $color-radio-text;
+    display: block;
+  }
+
+  @include tablet {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+
+.sort__item-label {
+  font-size: $typography-text-x-small;
+  line-height: 1.125rem;
+  font-family: "Open Sans";
+  color: $color-pagination-text;
+  cursor: pointer;
+
+}
+
+.sort__item-label:hover {
+  color: $color-pagination-button-text-hover;
+}
+
+.sort__item .sort__item-input:checked + .sort__item-label {
+  color: $color-primary-text;
+  border: none;
+}
